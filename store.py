@@ -1,10 +1,10 @@
 from tkinter import *
 from tkinter import ttk
-from gestion_de_stock.myDB import MyDB
-from gestion_de_stock.Product import Product
-from gestion_de_stock.Category import Category
+from myDB import MyDB
+from Product import Product
+from Category import Category
 
-class Store:
+class Shop:
     def __init__(self, master):
         self.master = master
         self.master.title("Gestion de Stock")
@@ -133,7 +133,7 @@ class Store:
 
 def main():
     root = Tk()
-    app = Store(root)
+    app = Shop(root)
     root.mainloop()
 
 if __name__ == "__main__":
